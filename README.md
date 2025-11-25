@@ -1,2 +1,2 @@
 # Making_Sandwich
-a web application that allows you to make a personalized sandwich
+a web application that allows you to make a personalized sandwich with simple ingredients.
