@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" href="res/images/favicon.ico"> 
+    <title>My Dashboard</title> 
+  </head> 
+  <body> 
+    <header class="header"> 
+    <strong>Welcome to your dashboard!</strong> 
+</header>
+<section>
+  <h2>Informations Personnelles</h2> 
+    <div> 
+        <img src="res/images/me.png" width="128" height="128" alt="My picture"> 
+    </div> 
+    <div> 
+        <ul> 
+            <li>Your name</li> 
+            <li> A date following this format dd/mm/yyyy</li> 
+            <li> Software Engineering </li> 
+        </ul> 
+    </div> 
+    <div> 
+        <strong>2.65</strong> 
+    </div> 
+</section> 
+<section> 
+    <h1>Courses</h1> 
+    <table> 
+        <thead> 
+        <tr> 
+            <th>#</th> 
+            <th>Course Title</th> 
+            <th>Semester</th> 
+            <th>Grade</th> 
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr> 
+            <td>1</td> 
+            <td><a href="https://fr.wikipedia.org/wiki/Développement_agile_de_logiciel">Agile software development</a></td> 
+            <td>fall</td> 
+            <td>82</td> 
+        </tr> 
+        <tr> 
+            <td>2</td> 
+            <td><a href="https://fr.wikipedia.org/wiki/Modélisation_de_systèmes">Systems modelling</a></td> 
+            <td>fall</td> 
+            <td>85</td> 
+        </tr> 
+        <tr> 
+            <td>3</td> 
+            <td><a href="https://fr.wikipedia.org/wiki/Ingénierie_des_exigences">Requirements Engineering</a> </td> 
+            <td>fall</td> 
+            <td>99</td> 
+        </tr> 
+        <tr> 
+            <td>4</td> 
+            <td><a href="https://fr.wikipedia.org/wiki/Interaction_homme-machine">Human Computer Interaction</a> </td> 
+            <td>fall</td> 
+            <td>65</td> 
+        </tr> 
+        </tbody> 
+        <tfoot>
+            <tr>
+                <td colspan="3">Moyenne des notes:</td>
+                <td>78</td> 
+            </tr>
+        </tfoot>
+    </table> 
+</section>
+
+<section>
+    <h2>Ajouter un nouveau cours</h2>
+    <form>
+        <p>
+            <label for="courseTitle">Course Title:</label>
+            <input type="text" id="courseTitle" name="courseTitle">
+        </p>
+
+        <p>
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option value="fall">Fall</option>
+                <option value="spring">Spring</option>
+            </select>
+        </p>
+
+        <p>
+            Attendance:
+            <br>
+            <input type="radio" id="virtual" name="attendance" value="virtual">
+            <label for="virtual">Virtual attendance</label>
+            <br>
+            <input type="radio" id="physical" name="attendance" value="physical">
+            <label for="physical">Physical attendance</label>
+        </p>
+
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</section>
+
+<footer> 
+    <ul> 
+        <li> 
+            <a href="https://www.inpt.ac.ma/" target="_blank">moodle</a> 
+        </li> 
+         <li> 
+            <a href="https://m.inpt.ac.ma/" target="_blank">Courses</a> 
+        </li> 
+    </ul> 
+</footer>
+
+  </body> 
+</html>
